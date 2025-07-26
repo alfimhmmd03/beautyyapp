@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wpbg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- NAMA -->
+        <TextView
+            android:text="Nama:"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <!-- JENIS KULIT -->
+        <TextView
+            android:text="Jenis Kulit:"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvJenisKulit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <!-- TUJUAN PERAWATAN -->
+        <TextView
+            android:text="Tujuan Perawatan:"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <!-- JUMLAH HARI JADWAL -->
+        <EditText
+            android:id="@+id/etJumlahHari"
+            android:hint="Berapa Hari Jadwal? (misal: 7)"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- JAM PAGI -->
+        <EditText
+            android:id="@+id/etJamPagi"
+            android:hint="Jam Skincare Pagi"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- JAM MALAM -->
+        <EditText
+            android:id="@+id/etJamMalam"
+            android:hint="Jam Skincare Malam"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- CATATAN OPSIONAL -->
+        <EditText
+            android:id="@+id/etCatatan"
+            android:hint="Catatan Mingguan (opsional)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- TOMBOL SIMPAN -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:text="Simpan Jadwal"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
