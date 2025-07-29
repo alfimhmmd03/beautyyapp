@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:fillViewport="true"
+    android:background="@drawable/wpbg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Bungkus untuk form input -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/pink_rose"
+            android:padding="16dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="40dp"> <!-- jarak ke button -->
+
+            <EditText
+                android:id="@+id/etNama"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="12dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etJenisKulit"
+                android:hint="Jenis Kulit (misal: kering, berminyak)"
+                android:inputType="textCapWords"
+                android:layout_marginBottom="12dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etTujuan"
+                android:hint="Tujuan Perawatan (misal: mencerahkan)"
+                android:inputType="textCapSentences"
+                android:layout_marginBottom="12dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:layout_marginBottom="12dp"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:textSize="25sp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Tombol di luar form -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Register"
+            android:textSize="30sp"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C36171"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"/>
+    </LinearLayout>
+</ScrollView>

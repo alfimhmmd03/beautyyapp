@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:fillViewport="true"
+    android:background="@drawable/wpbg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Bungkus form -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/pink_rose"
+            android:padding="16dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="40dp">
+
+            <!-- Nama -->
+            <TextView
+                android:text="Nama:"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvNama"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Jenis Kulit -->
+            <TextView
+                android:text="Jenis Kulit:"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvJenisKulit"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Tujuan Perawatan -->
+            <TextView
+                android:text="Tujuan Perawatan:"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvTujuan"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Jumlah Hari -->
+            <EditText
+                android:id="@+id/etJumlahHari"
+                android:hint="Berapa Hari Jadwal? (misal: 7)"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Jam Pagi -->
+            <EditText
+                android:id="@+id/etJamPagi"
+                android:hint="Jam Skincare Pagi"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Jam Malam -->
+            <EditText
+                android:id="@+id/etJamMalam"
+                android:hint="Jam Skincare Malam"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Catatan Opsional -->
+            <EditText
+                android:id="@+id/etCatatan"
+                android:hint="Catatan Mingguan (opsional)"
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Tombol simpan -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:text="Simpan Jadwal"
+            android:textSize="30sp"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C36171"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"/>
+    </LinearLayout>
+</ScrollView>
